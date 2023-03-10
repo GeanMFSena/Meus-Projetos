@@ -1,8 +1,14 @@
 #include <stdio.h>
+/*Primeiros codigos
+
+
+*/
+
+
+
 
 int main(int argc, char const *argv[])
 {
-    printf("ola Mundo, tudo bem?");
-    
+    printf("%d",200.333);
     return 0;
 }
