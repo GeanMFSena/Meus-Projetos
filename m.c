@@ -1,36 +1,24 @@
 #include <stdio.h> 
-char menu(void) {
-
-char opcaoDigitada;
-
-printf("");
-
-printf("**");
-
-printf("");
-
-printf("Numero* 1 - Colsulta");
-printf("Numero* 2 - Alteracao");
-printf("Numero* 3 - Inclusao");
-printf("Numero* 4 - Exclusao");
-printf("Numero* 5 - Sair");
-
-printf("*5*");
-
-printf("*opcao%d:",2);
-
-opcaoDigitada=getchar();
-
-return opcaoDigitada;
-
-}
 
 int main(int argc, char const *argv[])
 {
-    char opcao=menu();
+
+int opcao;
+
+printf("Escolha uma opcao: \n");
+
+printf("Numero* 1 - Colsulta \n");
+
+printf("Numero* 2 - Alteracao \n");
+
+printf("Numero* 3 - Inclusao \n");
+
+printf("Numero* 4 - Exclusao \n");
+
+printf("Numero* 5 - Sair \n");
+scanf("%d", &opcao);
 
     switch (opcao)
-
     {
 
     case 1:
@@ -56,12 +44,12 @@ int main(int argc, char const *argv[])
     default:
         
      printf ("Opcao invalida");
-    
+    return 0;
     }
 
-
-    return 0;
 }
+    
+
 
 
 
