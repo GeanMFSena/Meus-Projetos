@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+body{background-color: #E8E5C2;}
+
+
+header{
+  
+
+text-align: center;
+height: 100%;
+width: 100%;
+padding: 10px;
+background-image:linear-gradient(#149f53,rgb(3, 56, 3)) ;
+color: white;
+
+}
+nav{text-align: justify;
+color: #54d58e;
+display:inline;
+text-align: justify;
+margin: auto 20px;
+}
+
+nav:hover{
+    background-color: #2a8f58;
+    
+}
+
+main{text-align: center;
+    
+    padding: 10px;
+    margin: 0px 100px;
+    background-color: white ;
+
+}
+
+h2#unico{font-family: idroid;
+text-align: left;}
+
+p.textogeral{text-align: justify;
+    text-indent: 50px;}
+
+h3.verdedegrade{text-align: justify;
+font-family: idroid;
+color: #073d1f;
+background-image:linear-gradient(to right,#54d58e, rgb(230, 240, 229) ) ;
+margin: 5px;}
+
+a{background-color: #87E1B1;
+color: #095A2B;
+font-weight: bold;
+}
+
+
+ol{display: inline-block;}
+ol#primeiralista{text-align: left;}
+ol#segundalista{text-align: left;}
+
+div{background-color: #C5EBD6;
+    height: 400px;
+margin: 50px 100px;
+border-radius: 10px;}
+
+h4{background-color: #2FA866;
+color: white;
+height: 30px;
+padding: 10px;
+text-align: justify;
+border-radius: 10px;
+font-weight: bolder;
+text-indent: 5px;}
+
+footer{ text-align: right;
+background-color: #073d1f;
+color: white;
+}
+
+
+p#naovai{text-align: center;}
