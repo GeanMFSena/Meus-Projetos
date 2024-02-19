@@ -16,10 +16,10 @@
 
     <p>Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar</p> 
     
-     <nav>Home
-        Notícias
-        Curiosidades
-        Fale Conosco</nav>
+     <nav><a href="#">Home</a>
+        <a href="#">Notícias</a>
+        <a href="#">Curiosidades</a>
+        <a href="#">Fale Conosco</a></nav>
 
 </header>
 
@@ -33,30 +33,41 @@
             </p>
             <h2>A primeira versão</h2>
             
-            <p>A primeira tentativa de criar um mascote surgiu em 2007 e veio de um desenvolvedor chamado <a href="https://androidcommunity.com/dan-morrill-shows-us-the-android-mascot-that-almost-was-20130103/" target="_blank">Dan Morrill</a>. Ele conta que abriu o <a href="https://inkscape.org/pt-br/" target="_blank">Inkscape</a> (software livre para vetorização de imagens) e criou sua própria versão de robô. O objetivo era apenas personificar o sistema apenas para a a sua equipe, não existia nenhuma solicitação da empresa para a criação de um mascote.</p>
+            <p>A primeira tentativa de criar um mascote surgiu em 2007 e veio de um desenvolvedor chamado <a href="https://androidcommunity.com/dan-morrill-shows-us-the-android-mascot-that-almost-was-20130103/" target="_blank" class="externo">Dan Morrill</a>. Ele conta que abriu o <a href="https://inkscape.org/pt-br/" target="_blank"class="externo">Inkscape</a> (software livre para vetorização de imagens) e criou sua própria versão de robô. O objetivo era apenas personificar o sistema apenas para a a sua equipe, não existia nenhuma solicitação da empresa para a criação de um mascote.</p>
             
-            <img src="outros/imagens/dan-droids.png" alt="dan droids">
+            <picture>
+                
+                <source media="(max-width: 600px )" srcset="../outros/imagens/dan-droids-pq.png">
+        
+                <img src="outros/imagens/dan-droids.png" alt="dan droids"></picture>
             
             <p>
                 Essa primeira versão bizarra até foi batizada em homenagem ao seu criador: seriam os Dandroids.
                 
-                Surge um novo mascote
+                <h2>Surge um novo mascote</h2>
                 
-                A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa <a href="https://www.irinablok.com/" target="_blank">Irina Blok</a>, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.
+                A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa <a href="https://www.irinablok.com/" target="_blank" class="externo">Irina Blok</a>, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.
             </p>
             
-            <img src="outros/imagens/irina-blok.jpg" alt="irina">
+            <picture>
+                <source media="(max-width:600px)" srcset="../outros/imagens/irina-blok-pq.jpg">
+                <img src="outros/imagens/irina-blok.jpg" alt="irina">
+            </picture>
             
             <p>A ideia principal da Irina era representar tudo graficamente com poucos traços e de forma mais chapada. O desenho também deveria gerar identificação rápida com quem o olha. Surgiu então o <strong>Bugdroid</strong>, o novo mascote do Android.</p>
             
-            <img src="outros/imagens/bugdroid.png" alt="">
+            <picture id="pequeno">
+                <img src="outros/imagens/bugdroid.png" alt="Bugdroid">        
+            </picture>
 
          <p>
              A principal inspiração para os traços do novo Bugdroid veio daqueles bonequinhos que ilustram portas de banheiro para indicar o gênero de cada porta. Conta a lenda que a artista estava criando em sua mesa no escritório do <strong>Google</strong> e olhou para o lado dos banheiros e a identificação foi imediata: simples, limpo, objetivo.
          </p>
             
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M?si=_rU_8rDKUn_QKgHz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-             
+         <div class="video">
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M?si=_rU_8rDKUn_QKgHz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         </div>
+
             <aside>
                 <h3>[EXTRA] Quer aprender mais?</h3>
                 
@@ -82,7 +93,7 @@
                 <p>
                     Infelizmente, o <strong>Android Q</strong> não existiu, pois o Google resolveu pôr fim a essa divertida prática e começou a usar numerações, o que deu origem ao Android 10.
                     
-                    Acesse aqui o site <a href="https://www.android.com/intl/en_uk/history/" target="_blank">Android History</a> para conhecer a sequência das versões "adocicadas" e o que cada uma trouxe para o sistema Android.
+                    Acesse aqui o site <a href="https://www.android.com/intl/en_uk/history/" target="_blank"class="externo">Android History</a> para conhecer a sequência das versões "adocicadas" e o que cada uma trouxe para o sistema Android.
                 </p>
         
                 <p>Então é isso! Espero que você tenha gostado do nosso artigo com essa curiosidade sobre o sistema Android e seu simpático mascote.</p>
@@ -91,7 +102,7 @@
         </article>
     </main>
     
-    <footer>Site criado por <a href="https://github.com/gustavoguanabara" target="_blank">Gustavo Guanabara</a> para o <a href="https://www.cursoemvideo.com/" target="_blank">Curso em Video</a>.</footer>
+    <footer>Site criado por <a href="https://github.com/gustavoguanabara" target="_blank"class="externo">Gustavo Guanabara</a> para o <a href="https://www.cursoemvideo.com/" target="_blank"class="externo">Curso em Video</a>.</footer>
 
 </body>
 </html>
