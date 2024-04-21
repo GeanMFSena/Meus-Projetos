@@ -18,7 +18,7 @@ padding: 10px;
 background-color: rgb(184, 184, 184);}
 
 table{
-
+    position: relative;
     border: 1px solid black;
     width: 400px;
     border-collapse: collapse;
@@ -29,13 +29,50 @@ td{ border: 1px solid black
 }
 
 th{ border: 1px solid black;
-background-color: rgba(0, 0, 0, 0.521);
+background-color: rgb(0, 0, 0);
 padding: 20px 0px;
 color: white;
 }
 
 
+thead > tr > th{
 
+    background-color: rgb(0, 0, 0);
+    position:sticky;
+    top: -1px;
+
+}
+
+
+/*Como fazer com que o Cabecalho fique movel na tabela 
+
+Coloque a posiçao da tabela como relativa 
+use position:sticky que significa colada ou grudada 
+depois top: 0px para colocar o cabecalho no topo da pagina quando vc mover ela para baixo 
+se ficar um espacinho coloque -1px para colar mais no topo 
+e coloque o mesmo background color para ficar igual quando o cabecalho tivesse estatico
+
+
+*/
+
+
+/* nth-child faz uma configuracao zebrada numa tabela 
+
+odd: impar
+even: par
+2n: o efeito começa a partir da segunda linha (par)
+2n-1 o efeito começa a partir da primeira linha (impar)
+
+*/
+
+tbody tr:nth-child(odd){
+
+background-color: lightgray;
+
+
+}
+
+tfoot td{text-align: center ;}
 </style>
 
 </head>
@@ -99,7 +136,146 @@ tr, th,td
 
 </tr>
 
+<tr>
+    <td>2</td>
+    <td>Minas Gerais</td>
+    <td>21 168 791</td>
+    <td>10%</td>
 
+</tr>
+
+<tr>
+    <td>2</td>
+    <td>Minas Gerais</td>
+    <td>21 168 791</td>
+    <td>10%</td>
+
+</tr>
+<tr>
+    <td>2</td>
+    <td>Minas Gerais</td>
+    <td>21 168 791</td>
+    <td>10%</td>
+
+</tr>
+
+<tr>
+    <td>2</td>
+    <td>Minas Gerais</td>
+    <td>21 168 791</td>
+    <td>10%</td>
+
+</tr>
+
+<tr>
+    <td>2</td>
+    <td>Minas Gerais</td>
+    <td>21 168 791</td>
+    <td>10%</td>
+
+</tr>
+
+<tr>
+    <td>2</td>
+    <td>Minas Gerais</td>
+    <td>21 168 791</td>
+    <td>10%</td>
+
+</tr>
+
+<tr>
+    <td>2</td>
+    <td>Minas Gerais</td>
+    <td>21 168 791</td>
+    <td>10%</td>
+
+</tr>
+
+<tr>
+    <td>2</td>
+    <td>Minas Gerais</td>
+    <td>21 168 791</td>
+    <td>10%</td>
+
+</tr>
+<tr>
+    <td>2</td>
+    <td>Minas Gerais</td>
+    <td>21 168 791</td>
+    <td>10%</td>
+
+</tr>
+<tr>
+    <td>2</td>
+    <td>Minas Gerais</td>
+    <td>21 168 791</td>
+    <td>10%</td>
+
+</tr>
+<tr>
+    <td>2</td>
+    <td>Minas Gerais</td>
+    <td>21 168 791</td>
+    <td>10%</td>
+
+</tr>
+<tr>
+    <td>2</td>
+    <td>Minas Gerais</td>
+    <td>21 168 791</td>
+    <td>10%</td>
+
+</tr>
+<tr>
+    <td>2</td>
+    <td>Minas Gerais</td>
+    <td>21 168 791</td>
+    <td>10%</td>
+
+</tr>
+<tr>
+    <td>2</td>
+    <td>Minas Gerais</td>
+    <td>21 168 791</td>
+    <td>10%</td>
+
+</tr>
+<tr>
+    <td>2</td>
+    <td>Minas Gerais</td>
+    <td>21 168 791</td>
+    <td>10%</td>
+
+</tr>
+<tr>
+    <td>2</td>
+    <td>Minas Gerais</td>
+    <td>21 168 791</td>
+    <td>10%</td>
+
+</tr>
+<tr>
+    <td>2</td>
+    <td>Minas Gerais</td>
+    <td>21 168 791</td>
+    <td>10%</td>
+
+</tr>
+<tr>
+    <td>2</td>
+    <td>Minas Gerais</td>
+    <td>21 168 791</td>
+    <td>10%</td>
+
+</tr>
+
+<tr>
+    <td>2</td>
+    <td>Minas Gerais</td>
+    <td>21 168 791</td>
+    <td>10%</td>
+
+</tr>
 
 
 
@@ -110,7 +286,7 @@ tr, th,td
 <tr>
     
     <th scope="row">Total Populaçao</th>
-    <td >210 281 120</td>    
+    <td colspan="3">210 281 120</td>    
 
 
 </tr>
@@ -120,10 +296,29 @@ tr, th,td
 </tfoot>
 </table>
 
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus deleniti minima vero assumenda blanditiis aperiam qui sit eveniet expedita voluptatibus quo magnam exercitationem, iusto ipsam repudiandae porro pariatur modi provident?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint culpa voluptatum recusandae a nesciunt animi beatae, obcaecati quo sit ipsam in, sequi aliquam corrupti accusantium, eaque sed exercitationem doloremque quidem!Loremlorem
+Lorem ipsum dolor sit amet consectetur adipisicing elit. In possimus recusandae praesentium, similique reprehenderit aperiam. Nostrum natus corporis impeditlaboriosam, ipsam ducimus ipsa enim totam deserunt quia autem placeat molestias. lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nobis ad error mollitia maiores aspernatur natus excepturi non ab fugiat? Pariatur voluptas nihil debitis eos, ipsam qui? Sed, aliquam explicabo!lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, ratione nemo aliquid, possimus porro esse laudantium cum assumenda soluta doloribus, cupiditate dolore amet voluptatibus asperiores quidem beatae eos in maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. A non id dignissimos in facilis culpa atque. Architecto, molestias, reiciendis voluptate, animi deleniti neque quae est tenetur quas nostrum natus voluptatem.
+</p>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus deleniti minima vero assumenda blanditiis aperiam qui sit eveniet expedita voluptatibus quo magnam exercitationem, iusto ipsam repudiandae porro pariatur modi provident?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint culpa voluptatum recusandae a nesciunt animi beatae, obcaecati quo sit ipsam in, sequi aliquam corrupti accusantium, eaque sed exercitationem doloremque quidem!Loremlorem
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. In possimus recusandae praesentium, similique reprehenderit aperiam. Nostrum natus corporis impeditlaboriosam, ipsam ducimus ipsa enim totam deserunt quia autem placeat molestias. lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nobis ad error mollitia maiores aspernatur natus excepturi non ab fugiat? Pariatur voluptas nihil debitis eos, ipsam qui? Sed, aliquam explicabo!lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, ratione nemo aliquid, possimus porro esse laudantium cum assumenda soluta doloribus, cupiditate dolore amet voluptatibus asperiores quidem beatae eos in maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. A non id dignissimos in facilis culpa atque. Architecto, molestias, reiciendis voluptate, animi deleniti neque quae est tenetur quas nostrum natus voluptatem.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus deleniti minima vero assumenda blanditiis aperiam qui sit eveniet expedita voluptatibus quo magnam exercitationem, iusto ipsam repudiandae porro pariatur modi provident?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint culpa voluptatum recusandae a nesciunt animi beatae, obcaecati quo sit ipsam in, sequi aliquam corrupti accusantium, eaque sed exercitationem doloremque quidem!Loremlorem
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In possimus recusandae praesentium, similique reprehenderit aperiam. Nostrum natus corporis impeditlaboriosam, ipsam ducimus ipsa enim totam deserunt quia autem placeat molestias. lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nobis ad error mollitia maiores aspernatur natus excepturi non ab fugiat? Pariatur voluptas nihil debitis eos, ipsam qui? Sed, aliquam explicabo!lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, ratione nemo aliquid, possimus porro esse laudantium cum assumenda soluta doloribus, cupiditate dolore amet voluptatibus asperiores quidem beatae eos in maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. A non id dignissimos in facilis culpa atque. Architecto, molestias, reiciendis voluptate, animi deleniti neque quae est tenetur quas nostrum natus voluptatem.
+        </p>
+        
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus deleniti minima vero assumenda blanditiis aperiam qui sit eveniet expedita voluptatibus quo magnam exercitationem, iusto ipsam repudiandae porro pariatur modi provident?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint culpa voluptatum recusandae a nesciunt animi beatae, obcaecati quo sit ipsam in, sequi aliquam corrupti accusantium, eaque sed exercitationem doloremque quidem!Loremlorem
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In possimus recusandae praesentium, similique reprehenderit aperiam. Nostrum natus corporis impeditlaboriosam, ipsam ducimus ipsa enim totam deserunt quia autem placeat molestias. lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nobis ad error mollitia maiores aspernatur natus excepturi non ab fugiat? Pariatur voluptas nihil debitis eos, ipsam qui? Sed, aliquam explicabo!lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, ratione nemo aliquid, possimus porro esse laudantium cum assumenda soluta doloribus, cupiditate dolore amet voluptatibus asperiores quidem beatae eos in maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. A non id dignissimos in facilis culpa atque. Architecto, molestias, reiciendis voluptate, animi deleniti neque quae est tenetur quas nostrum natus voluptatem.
+            </p>
+                
 
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus deleniti minima vero assumenda blanditiis aperiam qui sit eveniet expedita voluptatibus quo magnam exercitationem, iusto ipsam repudiandae porro pariatur modi provident?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint culpa voluptatum recusandae a nesciunt animi beatae, obcaecati quo sit ipsam in, sequi aliquam corrupti accusantium, eaque sed exercitationem doloremque quidem!Loremlorem
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In possimus recusandae praesentium, similique reprehenderit aperiam. Nostrum natus corporis impeditlaboriosam, ipsam ducimus ipsa enim totam deserunt quia autem placeat molestias. lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nobis ad error mollitia maiores aspernatur natus excepturi non ab fugiat? Pariatur voluptas nihil debitis eos, ipsam qui? Sed, aliquam explicabo!lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, ratione nemo aliquid, possimus porro esse laudantium cum assumenda soluta doloribus, cupiditate dolore amet voluptatibus asperiores quidem beatae eos in maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. A non id dignissimos in facilis culpa atque. Architecto, molestias, reiciendis voluptate, animi deleniti neque quae est tenetur quas nostrum natus voluptatem.
+                </p>
+                
 
-
-
-
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus deleniti minima vero assumenda blanditiis aperiam qui sit eveniet expedita voluptatibus quo magnam exercitationem, iusto ipsam repudiandae porro pariatur modi provident?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint culpa voluptatum recusandae a nesciunt animi beatae, obcaecati quo sit ipsam in, sequi aliquam corrupti accusantium, eaque sed exercitationem doloremque quidem!Loremlorem
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In possimus recusandae praesentium, similique reprehenderit aperiam. Nostrum natus corporis impeditlaboriosam, ipsam ducimus ipsa enim totam deserunt quia autem placeat molestias. lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nobis ad error mollitia maiores aspernatur natus excepturi non ab fugiat? Pariatur voluptas nihil debitis eos, ipsam qui? Sed, aliquam explicabo!lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, ratione nemo aliquid, possimus porro esse laudantium cum assumenda soluta doloribus, cupiditate dolore amet voluptatibus asperiores quidem beatae eos in maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. A non id dignissimos in facilis culpa atque. Architecto, molestias, reiciendis voluptate, animi deleniti neque quae est tenetur quas nostrum natus voluptatem.
+                    </p>
+                    
 </body>
 </html>
