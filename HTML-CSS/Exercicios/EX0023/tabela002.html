@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+
+
+<style>
+
+body{ font-family: 'Courier New', Courier, monospace;}
+
+
+caption{ font-size: 
+    1.5em;
+font-weight: bold;
+padding: 10px;
+background-color: rgb(184, 184, 184);}
+
+table{
+
+    border: 1px solid black;
+    width: 400px;
+    border-collapse: collapse;
+}
+
+td{ border: 1px solid black
+
+}
+
+th{ border: 1px solid black;
+background-color: rgba(0, 0, 0, 0.521);
+padding: 20px 0px;
+color: white;
+}
+
+
+
+</style>
+
+</head>
+<body>
+    
+<!--
+Anatomia de tabelas grandes 
+
+Caption: Legenda da tabela
+
+Table 
+
+thead 
+tr, th,td
+
+tbody
+tr, th,td
+
+tfoot 
+tr, th,td
+
+-->
+
+<h1>Uso de tabelas grandes</h1>
+
+<table>
+<caption>Populacao das unidades federativas</caption>
+
+
+<thead>
+<tr>
+    <th scope="col">Posiçao</th>
+    <th scope="col">Estado</th>
+    <th scope="col">Polução</th>
+    <th scope="col">% da POP Total</th>
+    
+
+
+    
+</tr>
+
+
+</thead>
+
+<tbody>
+
+<tr>
+    <td>1</td>
+    <td>Sao Paulo</td>
+    <td>45 919 049</td>
+    <td>21%</td>
+
+</tr>
+
+
+<tr>
+    <td>2</td>
+    <td>Minas Gerais</td>
+    <td>21 168 791</td>
+    <td>10%</td>
+
+</tr>
+
+
+
+
+
+</tbody>
+
+<tfoot>
+
+<tr>
+    
+    <th scope="row">Total Populaçao</th>
+    <td >210 281 120</td>    
+
+
+</tr>
+
+
+
+</tfoot>
+</table>
+
+
+
+
+
+
+</body>
+</html>
