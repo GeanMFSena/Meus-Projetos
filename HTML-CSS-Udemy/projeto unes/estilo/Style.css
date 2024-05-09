@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+
+body{font-family: Arial, Helvetica, sans-serif;
+background-image: url(../img/fundo2.png);
+}
+
+table{height: 100px;
+}
+
+
+td{width: 600px;
+
+;
+}
+td#unico{width: 600px;
+
+text-align: right;
+}
+td#imagemgrande{width: 600px;
+
+height: 600px;
+}
+img#imagem{height: 600px;
+
+
+}
